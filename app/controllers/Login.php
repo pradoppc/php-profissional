@@ -8,5 +8,9 @@
                 'data' => ['title' => 'Login'] 
              ];
         }
+
+        public function store(){
+
+        }
     }
 ?>
