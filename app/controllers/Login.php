@@ -18,8 +18,8 @@
                 return redirect('/login');
             }
 
-            $user = findBy('users', 'email', $email);
-
+            $user = findBy('tb_usuarios', 'ds_email', $email);
+            
             if (!$user){
                 return redirect('/login');
             }
