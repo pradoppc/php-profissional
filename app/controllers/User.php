@@ -8,7 +8,7 @@
             }
 
             $user = findBy('tb_usuarios', 'id_usuario', $params['user']);
-            $user = all('tb_usuarios', 'id_usuario');
+            $user = fetchAll('tb_usuarios', 'id_usuario');
 
         }
     }
