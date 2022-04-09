@@ -12,7 +12,7 @@
         public function store(){
 
             $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-            $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_EMAIL);
+            $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
             if (empty($email) || empty($password)){
                 return redirect('/login');

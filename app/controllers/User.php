@@ -8,9 +8,8 @@
             }
 
             $user = findBy('tb_usuarios', 'id_usuario', $params['user']);
-            //$user = all('tb_usuarios', 'id_usuario');
-            var_dump($user);
-            die();
+            $user = all('tb_usuarios', 'id_usuario');
+
         }
     }
 
